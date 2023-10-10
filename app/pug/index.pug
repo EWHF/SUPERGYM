@@ -1,0 +1,190 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Supergym
+    link(rel="stylesheet", href="/css/app.min.css")
+  body
+    header
+      .container
+        .header-top
+          img.logo(src="/images/Supergym.svg", alt="")
+          .number 8-800-555-55-55 
+    main  
+      .banner  
+        .container 
+          .text 
+            .location омск
+            h1 фитнес<br>центр
+            .info Тренажёрный зал <br> Групповые занятия <br> Кардио-зона
+            button.btn купить абонемент
+          img(src="images/rectangle.webp", alt="")
+          .social-links 
+            a(href="")
+              |fb
+            a(href="")
+              |vk
+            a(href="")
+              |ig
+      section.info
+        .container
+          .text
+            h2 Тренажерный зал
+            .desc Просторный зал площадью 900 кв/м
+            p Supergym – самый большой фитнес центр за Уралом<br> и идеальное место для укрепления тела и здоровья.<br> Тренажёрный зал оснащен всем необходимым<br> современным оборудованием для всех спортсменов.
+            p В зале расположены отдельная зона для Crossfit и<br> кардио-зона с 40 тренажерами. Также в фитнес<br> центре есть несколько оборудованных залов для<br> различных видов групповых занятий. 
+          .content  
+            img(src="images/kach.webp" width="660" height="401" , alt="")
+            .video
+              img.preview(src="images/Group8.webp", alt="")
+              img.play(src="images/Group 2.svg", alt="")
+              <iframe width="364" height="228"  title="YouTube video player" frameborder="0" allow="autoplay; accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      section.products 
+        .container 
+          .wrapper 
+            h2 абонементы
+            .months
+              p 1 месяц
+              p 6 месяцев
+              p 12 месяцев 
+          .container
+            .subscription
+              h3 С тренером
+              p 12 занятий
+              .price 5000
+              button купить абонемент
+            .subscription
+              h3 Дневной
+              p с 8:00 до 17:00
+              .price 1700
+              button  купить абонемент
+            .subscription
+              h3 Полный день
+              p с 8:00 до 22:00
+              .price 2700
+              button купить абонемент
+      section.ivent
+        .container 
+          .wrapper
+            .main-info      
+              .main-text
+                h4 super <br> games
+              .information 
+                .date
+                  .upper
+                    p Дата 
+                  .lower
+                    p 7
+                    .when
+                      p Марта <br> 2019
+                .time
+                  .upper
+                    p Время 
+                  p 12:00  
+            .bot-text
+              p Ежегодные соревнования по CrossFit 
+            button заполнить заявку   
+          img(src="images/man_hit.webp", width="660" height="500", alt="")  
+      section.trainers
+        .container
+          h2 тренеры
+          .wrapper
+            button.left-b 
+              img(src="images/left.svg", width="16" height="32", alt="")
+            .coach
+              img(src="images/AP.webp", width="260" height="294", alt="")
+              span Анна Павлова
+              .hov 
+                p  CrossFit
+                ul 
+                  li Certified Level 3 Trainer
+                  li Победитель чемпионата <br> России по CrossFit
+                  li Опыт — 6 лет
+            .coach
+              img(src="images/AL.webp", width="260" height="294",  alt="")
+              span Алексей Лавров
+              .hov 
+                p  CrossFit
+                ul 
+                  li Certified Level 3 Trainer
+                  li Победитель чемпионата <br> России по CrossFit
+                  li Опыт — 6 лет
+            .coach
+              img(src="images/APashkov.webp", width="260" height="294",  alt="")
+              span Александр Пашков
+              .hov 
+                p  CrossFit
+                ul 
+                  li Certified Level 3 Trainer
+                  li Победитель чемпионата <br> России по CrossFit
+                  li Опыт — 6 лет
+            .coach
+              img(src="images/MK.webp", width="260" height="294",  alt="")
+              span Мария Кетова
+              .hov 
+                p  CrossFit
+                ul 
+                  li Certified Level 3 Trainer
+                  li Победитель чемпионата <br> России по CrossFit
+                  li Опыт — 6 лет
+            button.right-b
+              img(src="images/right.svg", width="16" height="32", alt="")
+      section.benefits
+        .container 
+          h2 Наши преимущества
+          .wrapper
+            .column 
+              .upper
+                .number
+                  span 900
+                  p кв/м
+                .edge
+                  .ttl Площадь
+                  p Занимайтесь без очередей<br> и толпучки 
+              .lower
+                .number 
+                  span 350
+                  p мест
+                .edge 
+                  .ttl Комфорт
+                  p Просторные раздевалки,<br> душевые, фен, Wi-Fi, кулеры
+            .column.mid 
+              .number 100
+              span Тренажеров
+              p Современные тренажеры<br> на все группы мышц
+            .column 
+              .upper  
+                .number 
+                  span 70
+                  p машин
+                .edge 
+                  .ttl Собственная парковка
+                  p Вы всегда найдете место для<br> своей машины на нашей парковке
+              .lower
+                .number 
+                  span 5+
+                  p лет
+                .edge 
+                  .ttl Тренерский опыт
+                  p Добивайтесь своих целей быстрее<br> с профессиональным тренером       
+      section.promo
+        .container 
+          h2 акции
+          .wrapper
+            .promo.big
+              .column 
+                .ttl Год
+                .number 4999
+                p Безлимитный абонемент<br> в тренажерный зал
+                a подробнее
+              img(src="images/promo.webp", width="280" height="462",  alt="") 
+            .promo
+              .promo-name Месяц бесплатно
+              p Приведи друга, получи абонемент в подарок
+              a подробнее
+            .promo
+              .promo-name Скидка 20%
+              p Корпоративный фитнес с командой
+              a подробнее
+  script(src="/js/app.min.js")   
