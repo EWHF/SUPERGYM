@@ -38,8 +38,8 @@ html(lang="ru")
             img(src="images/kach.webp" width="660" height="401" , alt="")
             .video
               img.preview(src="images/Group8.webp", alt="")
-              img.play(src="images/Group 2.svg", alt="")
-              <iframe width="364" height="228"  title="YouTube video player" frameborder="0" allow="autoplay; accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              img.play(src="images/Group2.svg", alt="")
+              <iframe width="364" height="228"  title="YouTube video player" allow="autoplay; accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       section.products 
         .container 
           .wrapper 
@@ -96,6 +96,7 @@ html(lang="ru")
               img(src="images/AP.webp", width="260" height="294", alt="")
               span Анна Павлова
               .hov 
+                span Анна Павлова
                 p  CrossFit
                 ul 
                   li Certified Level 3 Trainer
@@ -105,6 +106,7 @@ html(lang="ru")
               img(src="images/AL.webp", width="260" height="294",  alt="")
               span Алексей Лавров
               .hov 
+                span Алексей Лавров
                 p  CrossFit
                 ul 
                   li Certified Level 3 Trainer
@@ -114,6 +116,7 @@ html(lang="ru")
               img(src="images/APashkov.webp", width="260" height="294",  alt="")
               span Александр Пашков
               .hov 
+                span Александр Пашков
                 p  CrossFit
                 ul 
                   li Certified Level 3 Trainer
@@ -123,6 +126,7 @@ html(lang="ru")
               img(src="images/MK.webp", width="260" height="294",  alt="")
               span Мария Кетова
               .hov 
+                span Мария Кетова
                 p  CrossFit
                 ul 
                   li Certified Level 3 Trainer
@@ -179,12 +183,61 @@ html(lang="ru")
                 p Безлимитный абонемент<br> в тренажерный зал
                 a подробнее
               img(src="images/promo.webp", width="280" height="462",  alt="") 
-            .promo
+            .promo.lttl
               .promo-name Месяц бесплатно
               p Приведи друга, получи абонемент в подарок
               a подробнее
-            .promo
+            .promo.lttl 
               .promo-name Скидка 20%
               p Корпоративный фитнес с командой
               a подробнее
+      section.reviews
+        .container 
+          h2 Отзывы
+          .slider 
+            .slide
+              button.left-b 
+                img(src="images/left.svg", width="16" height="32", alt="") 
+              button.right-b
+                img(src="images/right.svg", width="16" height="32", alt="")
+              img(src="images/AO.webp", width="80" height="80", alt="") 
+              .text 
+                .ttl Анна Орлова
+                p «Хожу в SuperClub уже больше года. Нравится,<br> что в клубе всегда чисто, тренажеры обновляют,<br> персонал дружелюбный. Зал просторный, даже<br> в вечернее время нет очередей»
+      section.about 
+        .gift
+          h2 бесплатное занятие
+          .recording
+            input(type="text" placeholder="Имя") 
+            input(type="text" placeholder="Телефон") 
+          button.send отправить
+        .contacts
+          h2 контакты
+          .inform 
+            .item 
+              .title Адрес:
+              .text г. Омск, ул. 60 лет Октября, 7
+            .item 
+              .title График работы:
+              .text Пн-Вс: с 8:00 до 22:00
+            .item 
+              .title Телефон:
+              .text 8-800-555-55-55
+            .item 
+              .title Email:
+              .text omsk@supergym.ru        
+    footer
+      .container 
+        img.logo(src="/images/Supergym.svg", alt="")
+        .nav 
+          a(href="#") Услуги
+          a(href="#") Абонементы
+          a(href="#") Акции
+          a(href="#") Тренеры
+          a(href="#") Расписание
+        .media 
+          img(src="/images/vk.svg", alt="")
+          img(src="/images/inst.svg", alt="")
+          img(src="/images/FB.svg", alt="")
+
   script(src="/js/app.min.js")   
