@@ -44,26 +44,59 @@ html(lang="ru")
         .container 
           .wrapper 
             h2 абонементы
-            .months
-              p 1 месяц
-              p 6 месяцев
-              p 12 месяцев 
+            .tabs
+              .tab.js-tab.active(data-tab-button="#tab-1") 1 месяц
+              .tab.js-tab(data-tab-button="#tab-2") 6 месяцев
+              .tab.js-tab(data-tab-button="#tab-3") 12 месяцев 
           .container
-            .tarif-card
-              h3 С тренером
-              p 12 занятий
-              .price 5000
-              button купить абонемент
-            .tarif-card
-              h3 Дневной
-              p с 8:00 до 17:00
-              .price 1700
-              button  купить абонемент
-            .tarif-card
-              h3 Полный день
-              p с 8:00 до 22:00
-              .price 2700
-              button купить абонемент
+            .tab-content.js-tab-content.active(data-tab-content="#tab-1")
+              .tarif-card
+                .title С тренером
+                .desc 12 занятий
+                .price 5000
+                button купить абонемент
+              .tarif-card
+                .title Дневной
+                .desc с 8:00 до 17:00
+                .price 1700
+                button  купить абонемент
+              .tarif-card
+                .title Полный день
+                .desc с 8:00 до 22:00
+                .price 2700
+                button купить абонемент
+            .tab-content.js-tab-content(data-tab-content="#tab-2")
+              .tarif-card
+                .title С тренером
+                .desc 12 занятий
+                .price 30000
+                button купить абонемент
+              .tarif-card
+                .title Дневной
+                .desc с 8:00 до 17:00
+                .price 10200
+                button  купить абонемент
+              .tarif-card
+                .title Полный день
+                .desc с 8:00 до 22:00
+                .price 16200
+                button купить абонемент
+            .tab-content.js-tab-content(data-tab-content="#tab-3")
+              .tarif-card
+                .title С тренером
+                .desc 12 занятий
+                .price 60000
+                button купить абонемент
+              .tarif-card
+                .title Дневной
+                .desc с 8:00 до 17:00
+                .price 20400
+                button  купить абонемент
+              .tarif-card
+                .title Полный день
+                .desc с 8:00 до 22:00
+                .price 32400
+                button купить абонемент
       section.ivent
         .container 
           .wrapper

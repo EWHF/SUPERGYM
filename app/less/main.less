@@ -351,7 +351,7 @@ header {
       flex-direction: column;
       align-items: center;
 
-      .months {
+      .tabs {
         display: flex;
         flex-direction: row;
         column-gap: 47px;
@@ -359,78 +359,97 @@ header {
         justify-content: center;
         border-bottom: 2px solid #78787833;
 
-        p {
+        .tab {
+          font-family: 'Roboto Condensed';
           font-size: 20px;
+          font-weight: 400;
+          line-height: 30px;
+          color: #10265480;       
+          padding-bottom: 20px;            
+        }
+
+        .active{
+          color: #102654;
+          border-bottom: 2px solid #D10A42;
         }
       }
     }
 
     .container {
-      display: grid;
-      grid-template-columns: 31% 31% 31%;
       column-gap: 40px;
       padding: 0;
 
-      .tarif-card {
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        align-items: center;
-        padding: 68px 77px;
-        margin-bottom: 120px;
-        border: 7px solid #fff;
-
-        h3 {
-          font-family: 'Roboto Condensed';
-          font-size: 26px;
-          line-height: 29px;
-          margin: 0;
-          margin-bottom: 10px;
-        }
-
-        p {
-          font-family: 'Roboto Condensed';
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 24px;
-          letter-spacing: 0em;
-          margin: 0;
-          padding-bottom: 75px;
-        }
-
-        .price {
-          font-family: 'Roboto Condensed';
-          font-size: 60px;
-          font-weight: 700;
-          color: #103AAE;
-          margin-bottom: 43px;
-        }
-
-        button {
-          text-decoration: none;
-          background-color: transparent;
-          border: 2px solid #102654;
-          padding: 0;
-          text-transform: uppercase;
-          padding: 24px 40px;
-          font-family: 'Roboto Condensed';
-          font-size: 12px;
-          font-weight: 700;
-          line-height: 14px;
-        }
-
-        button:hover {
-          color: white;
-          background-image: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
-          border: none;
-        }
+      .tab-content {
+        display: none;
+      }
+      
+      .active{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 40px;
       }
 
-      .tarif-card:hover {
-        border: 7px solid;
-        border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
-        border-image-slice: 1;
-      }
+        .tarif-card {
+          display: flex;
+          flex-direction: column;
+          background-color: white;
+          align-items: center;
+          padding: 68px 77px;
+          margin-bottom: 120px;
+          border: 7px solid #fff;
+
+          .title {
+            font-family: 'Roboto Condensed';
+            font-size: 26px;
+            line-height: 29px;
+            margin-bottom: 10px;
+            font-weight: 700;
+            color: #102654;           
+          }
+
+          .desc {
+            font-family: 'Roboto Condensed';
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            margin: 0;
+            padding-bottom: 75px;
+          }
+
+          .price {
+            font-family: 'Roboto Condensed';
+            font-size: 60px;
+            font-weight: 700;
+            color: #103AAE;
+            margin-bottom: 43px;
+          }
+
+          button {
+            text-decoration: none;
+            background-color: transparent;
+            border: 2px solid #102654;
+            padding: 0;
+            text-transform: uppercase;
+            padding: 24px 40px;
+            font-family: 'Roboto Condensed';
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 14px;
+          }
+
+          button:hover {
+            color: white;
+            background-image: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+            border: none;
+          }
+        }
+
+        .tarif-card:hover {
+          border: 7px solid;
+          border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+          border-image-slice: 1;
+        }
     }
   }
 }
