@@ -49,17 +49,17 @@ html(lang="ru")
               p 6 месяцев
               p 12 месяцев 
           .container
-            .subscription
+            .tarif-card
               h3 С тренером
               p 12 занятий
               .price 5000
               button купить абонемент
-            .subscription
+            .tarif-card
               h3 Дневной
               p с 8:00 до 17:00
               .price 1700
               button  купить абонемент
-            .subscription
+            .tarif-card
               h3 Полный день
               p с 8:00 до 22:00
               .price 2700
@@ -90,7 +90,7 @@ html(lang="ru")
         .container
           h2 тренеры
           .wrapper
-            button.left-b 
+            button.slider-btn.slider-btn-prev
               img(src="images/left.svg", width="16" height="32", alt="")
             .coach
               img(src="images/AP.webp", width="260" height="294", alt="")
@@ -132,7 +132,7 @@ html(lang="ru")
                   li Certified Level 3 Trainer
                   li Победитель чемпионата <br> России по CrossFit
                   li Опыт — 6 лет
-            button.right-b
+            button.slider-btn.slider-btn-next
               img(src="images/right.svg", width="16" height="32", alt="")
       section.benefits
         .container 
@@ -183,11 +183,11 @@ html(lang="ru")
                 p Безлимитный абонемент<br> в тренажерный зал
                 a подробнее
               img(src="images/promo.webp", width="280" height="462",  alt="") 
-            .promo.lttl
+            .promo.title
               .promo-name Месяц бесплатно
               p Приведи друга, получи абонемент в подарок
               a подробнее
-            .promo.lttl 
+            .promo.title 
               .promo-name Скидка 20%
               p Корпоративный фитнес с командой
               a подробнее
@@ -196,9 +196,9 @@ html(lang="ru")
           h2 Отзывы
           .slider 
             .slide
-              button.left-b 
+              button.slider-btn 
                 img(src="images/left.svg", width="16" height="32", alt="") 
-              button.right-b
+              button.slider-btn
                 img(src="images/right.svg", width="16" height="32", alt="")
               img(src="images/AO.webp", width="80" height="80", alt="") 
               .text 
@@ -209,7 +209,7 @@ html(lang="ru")
           h2 бесплатное занятие
           .recording
             input(type="text" placeholder="Имя") 
-            input(type="text" placeholder="Телефон") 
+            input(type="tel" placeholder="Телефон") 
           button.send отправить
         .contacts
           h2 контакты
@@ -235,9 +235,12 @@ html(lang="ru")
           a(href="#") Акции
           a(href="#") Тренеры
           a(href="#") Расписание
-        .media 
-          img(src="/images/vk.svg", alt="")
-          img(src="/images/inst.svg", alt="")
-          img(src="/images/FB.svg", alt="")
+        .socials 
+          a(href="#") 
+            img(src="/images/vk.svg", alt="")
+          a(href="#") 
+            img(src="/images/inst.svg", alt="")
+          a(href="#") 
+            img(src="/images/FB.svg", alt="")
 
   script(src="/js/app.min.js")   
